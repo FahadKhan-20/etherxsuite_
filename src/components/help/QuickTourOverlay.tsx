@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight, Check, Sparkles, Calculator, Layout, Grid3x3, Palette, BarChart3, Users, Database, FileSpreadsheet, Trophy } from "lucide-react";
-import logoImage from "../../assets/logo.png";
+import logoImage from "@/assets/logo.png";
 
 // ── Shapes-dropdown gold design tokens ──────────────────────────────────────
 const GOLD = '#FFD700';

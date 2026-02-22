@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "./ui/dialog";
 import { Menu } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "./ui/card";
-import logoImage from "../assets/logo.png";
+import logoImage from "@/assets/logo.png";
 import { getRecentSheetsWithMeta, formatDate, deleteSpreadsheet, type SpreadsheetData } from "../utils/spreadsheetStorage";
 import { importFile } from "../services/importService";
 import { generateTemplate } from "../services/templateService";

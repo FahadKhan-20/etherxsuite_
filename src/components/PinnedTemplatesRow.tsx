@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { colors, spacing, borderRadius, transitions } from '../utils/designTokens';
 import { useTheme } from '../contexts/ThemeContext';
-import starIcon from '../assets/logo.png';
+import starIcon from '@/assets/logo.png';
 
 interface Template {
   id: string;
