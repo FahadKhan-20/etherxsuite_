@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { colors, spacing, borderRadius, transitions } from '../utils/designTokens';
 import { useTheme } from '../contexts/ThemeContext';
+import starIcon from '../assets/logo.png';
 
 interface Template {
   id: string;
@@ -76,7 +77,7 @@ export function PinnedTemplatesRow({
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: spacing[2] }}>
-          <img src="/icons/3d/star.svg" alt="Star" style={{ width: '20px', height: '20px' }} />
+          <img src={starIcon} alt="Star" style={{ width: '20px', height: '20px' }} />
           <h3
             style={{
               fontSize: '1.125rem',
@@ -176,7 +177,7 @@ export function PinnedTemplatesRow({
                   marginBottom: spacing[3],
                 }}
               >
-                <img src="/icons/3d/star.svg" alt="Template" style={{ width: '20px', height: '20px' }} />
+                <img src={starIcon} alt="Template" style={{ width: '20px', height: '20px' }} />
               </div>
 
               {/* Content */}
@@ -265,7 +266,7 @@ export function PinnedTemplatesRow({
                 }}
               >
                 <img
-                  src="/icons/3d/star.svg"
+                  src={starIcon}
                   alt="Favorite"
                   style={{
                     width: '12px',

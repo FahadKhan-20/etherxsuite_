@@ -5,6 +5,12 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "./ui/popover";
+import userIcon from "../assets/logo.png";
+import settingsIcon from "../assets/logo.png";
+import fileSpreadsheetIcon from "../assets/logo.png";
+import collaborationIcon from "../assets/logo.png";
+import sparklesIcon from "../assets/logo.png";
+import xIcon from "../assets/logo.png";
 
 interface ProfileMenuProps {
   userName: string;
@@ -41,7 +47,7 @@ export function ProfileMenu({
 
   const menuItems = [
     {
-      iconSrc: "/icons/3d/settings.svg",
+      iconSrc: settingsIcon,
       label: "Settings",
       onClick: () => {
         onOpenSettings();
@@ -49,7 +55,7 @@ export function ProfileMenu({
       },
     },
     {
-      iconSrc: "/icons/3d/file-spreadsheet.svg",
+      iconSrc: fileSpreadsheetIcon,
       label: "My Sheets",
       onClick: () => {
         onOpenMySheets();
@@ -57,7 +63,7 @@ export function ProfileMenu({
       },
     },
     {
-      iconSrc: "/icons/3d/user.svg",
+      iconSrc: collaborationIcon,
       label: "Collaboration",
       onClick: () => {
         onOpenCollaboration();
@@ -126,7 +132,7 @@ export function ProfileMenu({
                 background: "linear-gradient(135deg, #FFD700 0%, #FFA500 100%)",
               }}
             >
-              <img src="/icons/3d/user.svg" alt="Profile" style={{ width: "20px", height: "20px" }} />
+              <img src={userIcon} alt="Profile" style={{ width: "20px", height: "20px" }} />
             </div>
             <h3
               className="font-bold text-lg"
@@ -236,7 +242,7 @@ export function ProfileMenu({
                   {item.label}
                 </span>
                 <img
-                  src="/icons/3d/sparkles.svg"
+                  src={sparklesIcon}
                   alt="Go"
                   style={{
                     width: "16px",
@@ -280,7 +286,7 @@ export function ProfileMenu({
               e.currentTarget.style.boxShadow = "none";
             }}
           >
-            <img src="/icons/3d/x.svg" alt="Logout" style={{ width: "16px", height: "16px", filter: "brightness(2)" }} />
+            <img src={xIcon} alt="Logout" style={{ width: "16px", height: "16px", filter: "brightness(2)" }} />
             Log Out
           </button>
         </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import emailjs from '@emailjs/browser';
-import logoImage from "../assets/Logo.png";
+import logoImage from "../assets/logo.png";
 import { Icon3D } from "./ui/Icon3D";
 
 interface ForgotPasswordPageProps {

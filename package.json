@@ -74,6 +74,7 @@
             "dev": "vite",
             "build": "vite build",
             "start:client": "vite",
+            "preview": "vite preview",
             "start:server": "cd backend && npm run dev",
             "start": "concurrently \"npm run start:client\" \"npm run start:server\"",
             "test:backend": "cd backend && npm test",

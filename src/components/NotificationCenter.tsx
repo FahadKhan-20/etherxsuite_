@@ -3,6 +3,15 @@ import { Button } from "./ui/button";
 import { ScrollArea } from "./ui/scroll-area";
 import { Badge } from "./ui/badge";
 import { Bell } from "lucide-react";
+import bellIcon from "../assets/logo.png";
+import bellUpgradedIcon from "../assets/logo.png";
+import checkIcon from "../assets/logo.png";
+import plusIcon from "../assets/logo.png";
+import fileSpreadsheetIcon from "../assets/logo.png";
+import downloadIcon from "../assets/logo.png";
+import uploadIcon from "../assets/logo.png";
+import trashIcon from "../assets/logo.png";
+import xIcon from "../assets/logo.png";
 import {
   Popover,
   PopoverContent,
@@ -72,23 +81,23 @@ export function NotificationCenter({
     const iconStyle = { width: '20px', height: '20px' };
     switch (type) {
       case "create":
-        return <img src="/icons/3d/plus.svg" alt="Create" style={iconStyle} />;
+        return <img src={plusIcon} alt="Create" style={iconStyle} />;
       case "edit":
-        return <img src="/icons/3d/file-spreadsheet.svg" alt="Edit" style={iconStyle} />;
+        return <img src={fileSpreadsheetIcon} alt="Edit" style={iconStyle} />;
       case "open":
-        return <img src="/icons/3d/file-spreadsheet.svg" alt="Open" style={iconStyle} />;
+        return <img src={fileSpreadsheetIcon} alt="Open" style={iconStyle} />;
       case "save":
-        return <img src="/icons/3d/download.svg" alt="Save" style={iconStyle} />;
+        return <img src={downloadIcon} alt="Save" style={iconStyle} />;
       case "share":
-        return <img src="/icons/3d/upload.svg" alt="Share" style={iconStyle} />;
+        return <img src={uploadIcon} alt="Share" style={iconStyle} />;
       case "delete":
-        return <img src="/icons/3d/trash.svg" alt="Delete" style={iconStyle} />;
+        return <img src={trashIcon} alt="Delete" style={iconStyle} />;
       case "import":
-        return <img src="/icons/3d/upload.svg" alt="Import" style={iconStyle} />;
+        return <img src={uploadIcon} alt="Import" style={iconStyle} />;
       case "export":
-        return <img src="/icons/3d/download.svg" alt="Export" style={iconStyle} />;
+        return <img src={downloadIcon} alt="Export" style={iconStyle} />;
       default:
-        return <img src="/icons/3d/bell.svg" alt="Notification" style={iconStyle} />;
+        return <img src={bellIcon} alt="Notification" style={iconStyle} />;
     }
   };
 
@@ -180,7 +189,7 @@ export function NotificationCenter({
               >
                 <img 
                   ref={iconImgRef}
-                  src="/icons/3d/bell-upgraded.svg" 
+                  src={bellUpgradedIcon}
                   alt="Notifications" 
                   style={{ 
                     width: '20px', 
@@ -218,7 +227,7 @@ export function NotificationCenter({
                   e.currentTarget.style.setProperty('color', isDarkMode ? '#FFFFFF' : '#FFD700', 'important');
                 }}
               >
-                <img src="/icons/3d/check.svg" alt="Check" style={{ width: '16px', height: '16px', marginRight: '4px' }} />
+                <img src={checkIcon} alt="Check" style={{ width: '16px', height: '16px', marginRight: '4px' }} />
                 Mark all read
               </Button>
             )}
@@ -268,7 +277,7 @@ export function NotificationCenter({
                   boxShadow: '0 8px 16px rgba(255, 215, 0, 0.3)',
                 }}
               >
-                <img src="/icons/3d/bell.svg" alt="No notifications" style={{ width: '48px', height: '48px' }} />
+                <img src={bellIcon} alt="No notifications" style={{ width: '48px', height: '48px' }} />
               </div>
               <p className="text-base font-semibold" style={{ color: isDarkMode ? '#FFFFFF' : '#000000' }}>
                 No notifications
@@ -374,7 +383,7 @@ export function NotificationCenter({
                       }}
                       title="Delete notification"
                     >
-                      <img src="/icons/3d/x.svg" alt="Delete" style={{ width: '16px', height: '16px' }} />
+                      <img src={xIcon} alt="Delete" style={{ width: '16px', height: '16px' }} />
                     </Button>
                   </div>
                 </div>

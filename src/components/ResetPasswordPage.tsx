@@ -5,7 +5,7 @@ import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Lock, Mail, User } from "lucide-react";
 import { toast } from "sonner";
-import logoImage from "../assets/Logo.png";
+import logoImage from "../assets/logo.png";
 
 interface ResetPasswordPageProps {
   email: string;

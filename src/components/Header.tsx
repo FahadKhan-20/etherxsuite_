@@ -16,6 +16,8 @@ import { trackActivity } from '../utils/notificationSystem';
 import { CollaborationMenu } from './CollaborationMenu';
 import { CollaborationPresence } from './collaboration/CollaborationPresence';
 import { IPFSStatus } from './IPFSStatus';
+import logo from '../assets/logo.png';
+
 
 interface HeaderProps {
   spreadsheetId: string;
@@ -249,6 +251,7 @@ Saved at: ${new Date().toLocaleString()}`;
   };
 
   return (
+
     <div className="h-12 flex items-center px-4 gap-4 text-black" style={{
       background: '#ffffff',
       borderBottom: '2px solid #FFD700',
@@ -256,7 +259,7 @@ Saved at: ${new Date().toLocaleString()}`;
     }}>
       <div className="flex items-center gap-4 pl-6">
         <img
-          src="/src/assets/Logo.png"
+          src={logo}
           alt="EtherX Logo"
           className="w-auto object-contain"
           style={{

@@ -4,6 +4,9 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Button } from "./ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "./ui/card";
 import { getAllTemplates, generateTemplate, type Template } from "../services/templateService";
+import sparklesIcon from "../assets/logo.png";
+import fileSpreadsheetIcon from "../assets/logo.png";
+import xIcon from "../assets/logo.png";
 
 interface TemplatePickerDialogProps {
   open: boolean;
@@ -166,7 +169,7 @@ export function TemplatePickerDialog({ open, onClose, onSelectTemplate, isDarkMo
         >
           <div className="flex items-center gap-3">
             <div className="p-2 rounded-lg" style={{ background: 'linear-gradient(135deg, rgba(255, 207, 64, 0.2) 0%, rgba(255, 207, 64, 0.1) 100%)', border: '2px solid rgba(255, 207, 64, 0.3)' }}>
-              <img src="/icons/3d/sparkles.svg" alt="Templates" style={{ width: '24px', height: '24px' }} />
+              <img src={sparklesIcon} alt="Templates" style={{ width: '24px', height: '24px' }} />
             </div>
             <div>
               <h2 className="text-2xl font-bold" style={{ color: '#FFCF40' }}>
@@ -190,7 +193,7 @@ export function TemplatePickerDialog({ open, onClose, onSelectTemplate, isDarkMo
               e.currentTarget.style.boxShadow = 'none';
             }}
           >
-            <img src="/icons/3d/x.svg" alt="Close" style={{ width: '20px', height: '20px' }} />
+            <img src={xIcon} alt="Close" style={{ width: '20px', height: '20px' }} />
           </button>
         </div>
 
@@ -225,7 +228,7 @@ export function TemplatePickerDialog({ open, onClose, onSelectTemplate, isDarkMo
             </div>
           ) : filteredTemplates.length === 0 ? (
             <div className="text-center py-12">
-              <img src="/icons/3d/sparkles.svg" alt="No templates" style={{ width: '64px', height: '64px', margin: '0 auto 16px' }} />
+              <img src={sparklesIcon} alt="No templates" style={{ width: '64px', height: '64px', margin: '0 auto 16px' }} />
               <p className="text-lg font-medium" style={{ color: '#666666' }}>
                 No templates found
               </p>
@@ -259,7 +262,7 @@ export function TemplatePickerDialog({ open, onClose, onSelectTemplate, isDarkMo
                   >
                     <div className="flex items-center gap-3 mb-2">
                       <div className="w-12 h-12 rounded-lg flex items-center justify-center" style={{ background: 'linear-gradient(135deg, rgba(255, 207, 64, 0.2) 0%, rgba(255, 207, 64, 0.1) 100%)', border: '2px solid rgba(255, 207, 64, 0.3)' }}>
-                        <img src="/icons/3d/file-spreadsheet.svg" alt={template.name} style={{ width: '24px', height: '24px' }} />
+                        <img src={fileSpreadsheetIcon} alt={template.name} style={{ width: '24px', height: '24px' }} />
                       </div>
                     </div>
                     {/* Removed category display as requested */}
