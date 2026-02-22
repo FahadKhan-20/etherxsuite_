@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { motion } from "motion/react";
-import logoImage from "../assets/Logo2.png";
+import logoImage from "@/assets/Logo2.png";
 
 interface StartupSplashProps {
   onComplete: () => void;

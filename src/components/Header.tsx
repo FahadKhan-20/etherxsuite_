@@ -16,7 +16,7 @@ import { trackActivity } from '../utils/notificationSystem';
 import { CollaborationMenu } from './CollaborationMenu';
 import { CollaborationPresence } from './collaboration/CollaborationPresence';
 import { IPFSStatus } from './IPFSStatus';
-import logo from '../assets/logo.png';
+import logoImage from "@/assets/Logo2.png";
 
 
 interface HeaderProps {
@@ -259,13 +259,9 @@ Saved at: ${new Date().toLocaleString()}`;
     }}>
       <div className="flex items-center gap-4 pl-6">
         <img
-          src={logo}
+          src={logoImage}
           alt="EtherX Logo"
-          className="w-auto object-contain"
-          style={{
-            height: '2.2rem',
-            filter: 'drop-shadow(0 1px 1px rgba(0,0,0,0.2))'
-          }}
+          className="h-6 w-auto"
         />
         {isEditingTitle ? (
           <input

@@ -3,15 +3,15 @@ import { Button } from "./ui/button";
 import { ScrollArea } from "./ui/scroll-area";
 import { Badge } from "./ui/badge";
 import { Bell } from "lucide-react";
-import bellIcon from "@/assets/logo.png";
-import bellUpgradedIcon from "@/assets/logo.png";
-import checkIcon from "@/assets/logo.png";
-import plusIcon from "@/assets/logo.png";
-import fileSpreadsheetIcon from "@/assets/logo.png";
-import downloadIcon from "@/assets/logo.png";
-import uploadIcon from "@/assets/logo.png";
-import trashIcon from "@/assets/logo.png";
-import xIcon from "@/assets/logo.png";
+import bellIcon from "@/assets/Logo2.png";
+import bellUpgradedIcon from "@/assets/Logo2.png";
+import checkIcon from "@/assets/Logo2.png";
+import plusIcon from "@/assets/Logo2.png";
+import fileSpreadsheetIcon from "@/assets/Logo2.png";
+import downloadIcon from "@/assets/Logo2.png";
+import uploadIcon from "@/assets/Logo2.png";
+import trashIcon from "@/assets/Logo2.png";
+import xIcon from "@/assets/Logo2.png";
 import {
   Popover,
   PopoverContent,

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion } from "motion/react";
 import { User } from "../types/spreadsheet";
-import logoImage from "../assets/Logo2.png";
+import logoImage from "@/assets/Logo2.png";
 
 interface WelcomeSplashProps {
   user: User;

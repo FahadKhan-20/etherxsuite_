@@ -4,9 +4,9 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { Button } from "./ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "./ui/card";
 import { getAllTemplates, generateTemplate, type Template } from "../services/templateService";
-import sparklesIcon from "@/assets/logo.png";
-import fileSpreadsheetIcon from "@/assets/logo.png";
-import xIcon from "@/assets/logo.png";
+import sparklesIcon from "@/assets/Logo2.png";
+import fileSpreadsheetIcon from "@/assets/Logo2.png";
+import xIcon from "@/assets/Logo2.png";
 
 interface TemplatePickerDialogProps {
   open: boolean;

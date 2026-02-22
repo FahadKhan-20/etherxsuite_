@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { Button } from "./ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "./ui/card";
 import { FileSpreadsheet, FilePlus2, Sparkles, Upload, Clock, Moon, Sun, Trash2, Settings, LogOut } from "lucide-react";
-import logoImage from "@/assets/logo.png";
+import logoImage from "@/assets/Logo2.png";
 import { getRecentSheets, getRecentSheetsWithMeta, formatDate, deleteSpreadsheet, type SpreadsheetData } from "../utils/spreadsheetStorage";
 import { trackActivity } from "../utils/notificationSystem";
 import { NotificationCenter } from "./NotificationCenter";

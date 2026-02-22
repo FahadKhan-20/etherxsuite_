@@ -5,12 +5,12 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "./ui/popover";
-import userIcon from "@/assets/logo.png";
-import settingsIcon from "@/assets/logo.png";
-import fileSpreadsheetIcon from "@/assets/logo.png";
-import collaborationIcon from "@/assets/logo.png";
-import sparklesIcon from "@/assets/logo.png";
-import xIcon from "@/assets/logo.png";
+import userIcon from "@/assets/Logo2.png";
+import settingsIcon from "@/assets/Logo2.png";
+import fileSpreadsheetIcon from "@/assets/Logo2.png";
+import collaborationIcon from "@/assets/Logo2.png";
+import sparklesIcon from "@/assets/Logo2.png";
+import xIcon from "@/assets/Logo2.png";
 
 interface ProfileMenuProps {
   userName: string;

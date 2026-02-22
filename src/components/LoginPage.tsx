@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Loader2, Eye, EyeOff } from "lucide-react";
 import { toast } from "sonner";
-import logoImage from "@/assets/logo.png";
+import logoImage from "@/assets/Logo2.png";
 import config from "../config";
 import { Icon3D } from "./ui/Icon3D";
 
